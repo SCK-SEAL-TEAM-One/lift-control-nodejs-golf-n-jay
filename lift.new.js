@@ -46,6 +46,11 @@ module.exports = class LiftV2 {
         }
     }
 
+        stop(){
+            
+            this.setMoveStatus("stop") 
+        }
+
     moveUp(targetfloor) {
         this.moveUntilMatchTargetFloor(targetfloor, () => {
             this.setMoveStatus("up")
